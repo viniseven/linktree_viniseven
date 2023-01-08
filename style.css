@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    font-size: 62.5%;
+    --fc-primary: #FFFFFF;
+    --fc-secondary: #000000;
+}
+
+body{
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+}
+
+.container{
+    margin: 0 auto;
+    width: min(100%, 80rem);
+    padding: 2rem;
+
+    text-align: center;
+}
+
+header img{
+    border-radius: 50%;
+    width: 15rem;
+}
+
+header h1,p{
+    color: var(--fc-primary);
+}
+
+header h1{
+    font-size: 3rem;
+}
+
+header p{
+    font-size: 2rem;
+}
+
+main{
+    margin-top: 3rem;
+}
+
+.links-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.links-wrapper div{
+    background-color: white;
+
+    border-radius: 8px;
+    height: 4rem;
+    width: min(100%, 50rem);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.links-wrapper div a{
+    text-decoration: none;
+    color: var(--fc-secondary);
+    font-size: 2rem;
+    margin-left: 1rem;
+    display: block;
+    width: 100%;
+}
+
+.links-wrapper div{
+    transition: 1.2s;
+}
+
+.links-wrapper div:hover{
+   cursor: pointer;
+    transform: scale(1.1); 
+}
+
+.links-wrapper img{
+    vertical-align: middle;
+}
